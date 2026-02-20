@@ -1,0 +1,32 @@
+### 1. Core Implementation Files                                                                                                                                                               
+                                                                                                                                                                                                
+ - sdk-api/src/main/java/dev/restate/sdk/Restate.java                                                                                                                                           
+     - Added public static <SVC> SVC service(Class<SVC> clazz, String serviceName): Overload to create a service proxy with an explicit name.                                                   
+     - Added public static <SVC> ServiceHandle<SVC> serviceHandle(Class<SVC> clazz, String serviceName): Overload to create a service handle with an explicit name.                             
+     - Refactored internal proxy creation into a private createProxy(Class<SVC> clazz, String serviceName, @Nullable String key) helper to ensure consistency across services, virtual objects, 
+       and workflows.                                                                                                                                                                                 
+     - Added org.jspecify.annotations.Nullable import.                                                                                                                                          
+ - sdk-api/src/main/java/dev/restate/sdk/ServiceHandleImpl.java                                                                                                                                 
+     - Added a new constructor: ServiceHandleImpl(Class<SVC> clazz, String serviceName, @Nullable String key) to allow the service name to be set independently of the class annotations.       
+     - Updated the existing constructor to delegate to this new one by default.                                                                                                                 
+                                                                                                                                                                                                
+ ### 2. Test Verification Files (Unit Tests)                                                                                                                                                    
+                                                                                                                                                                                                
+ - sdk-core/src/test/java/dev/restate/sdk/core/javaapi/reflections/ReflectionTest.java                                                                                                          
+     - Added new test definitions to verify that the SDK generates the correct CallEntryMessage with the overridden service name for both direct proxies and service handles.                   
+ - sdk-core/build.gradle.kts                                                                                                                                                                    
+     - Updated the disabledClassesCodegen list to include the new test classes. This prevents the annotation processor from trying to generate clients/factories for classes used specifically  
+ for manual reflection testing.                                                                                                                                                                 
+                                                                                                                                                                                                
+ ### 3. New Test Support Classes                                                                                                                                                                
+                                                                                                                                                                                                
+ Created in sdk-core/src/test/java/dev/restate/sdk/core/javaapi/reflections/:                                                                                                                   
+ - ExternalInterface.java: A shared interface contract without a @Service annotation.                                                                                                           
+ - ServiceA.java & ServiceB.java: Implementation classes used to verify that the SDK can target different services using the same interface.                                                    
+ - RouterService.java: A service that uses the new dynamic routing methods.                                                                                                                     
+ - ServiceWithInterface.java: A helper class for internal interface routing tests.                                                                                                              
+                                                                                                                                                                                                
+ ### Summary of the Logic                                                                                                                                                                       
+                                                                                                                                                                                                
+ The new methods bypass the usual @Service annotation check for the service name, instead using the provided String. However, they still scan the provided Class for @Handler annotations on    
+ methods to know which handler name to target and how to serialize the input/output types. This allows using a common interface as a routing template across many services.
