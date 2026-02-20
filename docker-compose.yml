@@ -1,0 +1,86 @@
+version: "3.9"
+
+services:
+  restate:
+    image: docker.io/restatedev/restate:latest
+    ports:
+      - "8080:8080"
+      - "9070:9070"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9070/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  service-a:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SUBPROJECT: service-a
+    ports:
+      - "9081:9080"
+    healthcheck:
+      test: ["CMD", "curl", "-X", "OPTIONS", "http://localhost:9080"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    depends_on:
+      restate:
+        condition: service_healthy
+
+  service-b:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SUBPROJECT: service-b
+    ports:
+      - "9082:9080"
+    healthcheck:
+      test: ["CMD", "curl", "-X", "OPTIONS", "http://localhost:9080"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    depends_on:
+      restate:
+        condition: service_healthy
+
+  router-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SUBPROJECT: router-service
+    ports:
+      - "9083:9080"
+    healthcheck:
+      test: ["CMD", "curl", "-X", "OPTIONS", "http://localhost:9080"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    depends_on:
+      restate:
+        condition: service_healthy
+
+  register:
+    image: curlimages/curl:latest
+    depends_on:
+      service-a:
+        condition: service_healthy
+      service-b:
+        condition: service_healthy
+      router-service:
+        condition: service_healthy
+    entrypoint: ["sh", "-c"]
+    command:
+      - |
+        echo "Waiting for Services to be healthy..."
+        sleep 5
+        echo "Registering ServiceA..."
+        curl -X POST http://restate:9070/deployments -H 'Content-Type: application/json' -d '{"uri": "http://service-a:9080"}'
+        echo "Registering ServiceB..."
+        curl -X POST http://restate:9070/deployments -H 'Content-Type: application/json' -d '{"uri": "http://service-b:9080"}'
+        echo "Registering RouterService..."
+        curl -X POST http://restate:9070/deployments -H 'Content-Type: application/json' -d '{"uri": "http://router-service:9080"}'
+        echo "All services registered."

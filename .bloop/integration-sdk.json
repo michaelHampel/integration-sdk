@@ -1,0 +1,645 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "integration-sdk",
+        "directory": "/Users/michham/github/integration-sdk",
+        "workspaceDir": "/Users/michham/github/integration-sdk",
+        "sources": [
+            "/Users/michham/github/integration-sdk/src/main/java"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/michham/github/sdk-java/sdk-api/build/classes/java/main",
+            "/Users/michham/github/sdk-java/sdk-http-vertx/build/classes/java/main",
+            "/Users/michham/github/sdk-java/sdk-http-vertx/build/classes/kotlin/main",
+            "/Users/michham/github/sdk-java/sdk-serde-jackson/build/classes/java/main",
+            "/Users/michham/github/sdk-java/sdk-serde-jackson/build/classes/kotlin/main",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.12/5fb15030fb6158ef4f63ce4f889f72f4259a7bc3/slf4j-simple-2.0.12.jar",
+            "/Users/michham/github/sdk-java/sdk-common/build/classes/java/main",
+            "/Users/michham/github/sdk-java/sdk-common/build/classes/kotlin/main",
+            "/Users/michham/github/sdk-java/common/build/classes/java/main",
+            "/Users/michham/github/sdk-java/common/build/classes/kotlin/main",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.10/30de6faa127a4a012db8e71bf1b9c0a99b1402b2/kotlin-stdlib-2.2.10.jar",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.19.4/bbb09b1e7f7f5108890270eb701cb3ddef991c05/jackson-annotations-2.19.4.jar",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.19.4/a720ca9b800742699e041c3890f3731fe516085e/jackson-core-2.19.4.jar",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.19.4/7a39bf9257b726b90b80f27fa3f5174bc75162a5/jackson-databind-2.19.4.jar",
+            "/Users/michham/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-api/1.58.0/6d2be0c909cfe6c9e0d9349d4b1f5d7edf4f57ee/opentelemetry-api-1.58.0.jar",
+            "/Users/michham/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-context/1.58.0/2df0b731c3c7c461816310891885777d424a1799/opentelemetry-context-1.58.0.jar",
+            "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-common/1.58.0/b010feca635862d4e0cc65ffdacaa2ce2cb764f1/opentelemetry-common-1.58.0.jar"
+        ],
+        "out": "/Users/michham/github/integration-sdk/.bloop/integration-sdk/build",
+        "classesDir": "/Users/michham/github/integration-sdk/.bloop/integration-sdk/build/classes",
+        "resources": [
+            "/Users/michham/github/integration-sdk/src/main/resources"
+        ],
+        "java": {
+            "options": [
+                "-target",
+                "21",
+                "-source",
+                "21",
+                "-h",
+                "/Users/michham/github/integration-sdk/build/generated/sources/headers/java/main",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true"
+            ]
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/michham/.sdkman/candidates/java/25.0.1-tem",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                "dev.restate.sdk.integration.Main"
+            ],
+            "classpath": [
+                "/Users/michham/github/sdk-java/sdk-api/build/libs/sdk-api-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/github/sdk-java/sdk-http-vertx/build/libs/sdk-http-vertx-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/github/sdk-java/sdk-serde-jackson/build/libs/sdk-serde-jackson-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.12/5fb15030fb6158ef4f63ce4f889f72f4259a7bc3/slf4j-simple-2.0.12.jar",
+                "/Users/michham/github/sdk-java/sdk-common/build/libs/sdk-common-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/github/sdk-java/bytebuddy-proxy-support/build/libs/bytebuddy-proxy-support-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/github/sdk-java/common/build/libs/common-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.24.3/b02c125db8b6d295adf72ae6e71af5d83bce2370/log4j-api-2.24.3.jar",
+                "/Users/michham/github/sdk-java/sdk-core/build/libs/sdk-core-2.7.0-SNAPSHOT.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.10/30de6faa127a4a012db8e71bf1b9c0a99b1402b2/kotlin-stdlib-2.2.10.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/4.5.24/5d42083301111fec3e836bfe0320cb68fb90778e/vertx-core-4.5.24.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-api/1.58.0/6d2be0c909cfe6c9e0d9349d4b1f5d7edf4f57ee/opentelemetry-api-1.58.0.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.reactiverse/reactiverse-contextual-logging/1.2.1/e997c72c3bf9ae29b695ce83b8f9ea64461c9185/reactiverse-contextual-logging-1.2.1.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.github.victools/jsonschema-generator/4.38.0/2b24dbc099c58c50aa8d9d2fa755d75d5e97f0e5/jsonschema-generator-4.38.0.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.19.4/a720ca9b800742699e041c3890f3731fe516085e/jackson-core-2.19.4.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.19.4/bbb09b1e7f7f5108890270eb701cb3ddef991c05/jackson-annotations-2.19.4.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.19.4/3cbcf2e636a6b062772299bf19a347536e58c4df/jackson-datatype-jsr310-2.19.4.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.19.4/7a39bf9257b726b90b80f27fa3f5174bc75162a5/jackson-databind-2.19.4.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.github.victools/jsonschema-module-jackson/4.38.0/c924f0d657ddf66b624f584e76edc0bfc50d2988/jsonschema-module-jackson-4.38.0.jar",
+                "/Users/michham/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.18.3/c35b2e4bf0e22e4d492936d46506bb2e6d8fafc8/byte-buddy-1.18.3.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.4/675cbe121a68019235d27f6c34b4f0ac30e07418/objenesis-3.4.jar",
+                "/Users/michham/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/4.29.3/83afa847b893932b49a8fd896608fa23cd5fb0b5/protobuf-java-4.29.3.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.130.Final/9356fba7a979f4321dbfef39ccd137eef76316a2/netty-handler-proxy-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.130.Final/3d9f8c56e4bc30ddc982c7e241422ec4033349c2/netty-codec-http2-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.130.Final/281823954b07b2991da521bddddd2d2adcbef0bb/netty-codec-http-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.130.Final/a08b6f50ce63a95a426e79f784158a0a670dbbf4/netty-resolver-dns-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.130.Final/e0593333f454ea57a02c6f4656401506e3deae14/netty-handler-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.130.Final/a29adec03f7dbefdab3b21523a15c35e794f3154/netty-transport-native-unix-common-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.130.Final/fdf31122e3dedd9c87f0865136a895ab699881ca/netty-codec-socks-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.130.Final/efe5cecf79551fda4f5a14c73934e7eedc1e234d/netty-codec-dns-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.130.Final/a645e96a5db4c6266f995d0d3d6ad04726e6c87a/netty-codec-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.130.Final/3a25cd7a1c057ed9a1606caa4b693f9c8b5c4b53/netty-transport-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.130.Final/ac7c21d8df92fe99f04dff2e28ff387b8195e6cf/netty-buffer-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.130.Final/c22bc6c0a694ce099548b92e88ac58527fe6e9a9/netty-resolver-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.130.Final/d4a1809fd03b560c82f7e35228e524fed96926f3/netty-common-4.1.130.Final.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-context/1.58.0/2df0b731c3c7c461816310891885777d424a1799/opentelemetry-context-1.58.0.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.7.0/e98374da1f2143ac8e6e0a95036994bb19137a3/classmate-1.7.0.jar",
+                "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-common/1.58.0/b010feca635862d4e0cc65ffdacaa2ce2cb764f1/opentelemetry-common-1.58.0.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.130.Final/3a25cd7a1c057ed9a1606caa4b693f9c8b5c4b53/netty-transport-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.130.Final/379e4fc7606e1a086e41fcf80fbdd1c151765c01/netty-transport-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-dns",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-dns",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.130.Final/efe5cecf79551fda4f5a14c73934e7eedc1e234d/netty-codec-dns-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-dns",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.130.Final/ff472de37609b6a4809861b7d990cc5c75e4473a/netty-codec-dns-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.19.4",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.19.4/7740aa401395fde56531bcbd192d0fea2c3ae039/jackson-databind-2.19.4-sources.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.19.4/7a39bf9257b726b90b80f27fa3f5174bc75162a5/jackson-databind-2.19.4.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.130.Final/c4dd311f2afea06ab8484dd5b2145d5decf6d14e/netty-codec-http-4.1.130.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.130.Final/281823954b07b2991da521bddddd2d2adcbef0bb/netty-codec-http-4.1.130.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.130.Final/c22bc6c0a694ce099548b92e88ac58527fe6e9a9/netty-resolver-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.130.Final/ef2a356542f764d159bf4b0ee4062c5b949208a9/netty-resolver-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.130.Final/d4a1809fd03b560c82f7e35228e524fed96926f3/netty-common-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.130.Final/8e985f77cca4c79528d8ac6c8cbad406be7bf326/netty-common-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-socks",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-socks",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.130.Final/fdf31122e3dedd9c87f0865136a895ab699881ca/netty-codec-socks-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-socks",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.130.Final/3739d88cca3ce441d77d8ccd2cb19592254b269/netty-codec-socks-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.opentelemetry",
+                    "name": "opentelemetry-common",
+                    "version": "1.58.0",
+                    "artifacts": [
+                        {
+                            "name": "opentelemetry-common",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-common/1.58.0/e318ff2ad228a48f3970f7946abebf7fc8e4c519/opentelemetry-common-1.58.0-sources.jar"
+                        },
+                        {
+                            "name": "opentelemetry-common",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-common/1.58.0/b010feca635862d4e0cc65ffdacaa2ce2cb764f1/opentelemetry-common-1.58.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.reactiverse",
+                    "name": "reactiverse-contextual-logging",
+                    "version": "1.2.1",
+                    "artifacts": [
+                        {
+                            "name": "reactiverse-contextual-logging",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.reactiverse/reactiverse-contextual-logging/1.2.1/ae4bef6bd32cdb8cadf73f0005d66e681c16e35d/reactiverse-contextual-logging-1.2.1-sources.jar"
+                        },
+                        {
+                            "name": "reactiverse-contextual-logging",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.reactiverse/reactiverse-contextual-logging/1.2.1/e997c72c3bf9ae29b695ce83b8f9ea64461c9185/reactiverse-contextual-logging-1.2.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.19.4",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.19.4/997964c0f32b3745b9b326b76458232b9568f917/jackson-annotations-2.19.4-sources.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.19.4/bbb09b1e7f7f5108890270eb701cb3ddef991c05/jackson-annotations-2.19.4.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.130.Final/6c8f8ceca66d58ba40b059d323964dcf1366661a/netty-codec-4.1.130.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.130.Final/a645e96a5db4c6266f995d0d3d6ad04726e6c87a/netty-codec-4.1.130.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.130.Final/3d9f8c56e4bc30ddc982c7e241422ec4033349c2/netty-codec-http2-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.130.Final/c6d597b09089593ef7176a12d827b7215e8b3e2/netty-codec-http2-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.vertx",
+                    "name": "vertx-core",
+                    "version": "4.5.24",
+                    "artifacts": [
+                        {
+                            "name": "vertx-core",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/4.5.24/476beedeec783565ff7ffc2d474d20643dea506/vertx-core-4.5.24-sources.jar"
+                        },
+                        {
+                            "name": "vertx-core",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/4.5.24/5d42083301111fec3e836bfe0320cb68fb90778e/vertx-core-4.5.24.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.victools",
+                    "name": "jsonschema-generator",
+                    "version": "4.38.0",
+                    "artifacts": [
+                        {
+                            "name": "jsonschema-generator",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.github.victools/jsonschema-generator/4.38.0/2b24dbc099c58c50aa8d9d2fa755d75d5e97f0e5/jsonschema-generator-4.38.0.jar"
+                        },
+                        {
+                            "name": "jsonschema-generator",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.github.victools/jsonschema-generator/4.38.0/5ce72fac6f3749ee9ba8b7a19dc0e3882e3512/jsonschema-generator-4.38.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.19.4",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.19.4/a87c2a1d80ba2f8b29513ccb609b51ea2e025d42/jackson-core-2.19.4-sources.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.19.4/a720ca9b800742699e041c3890f3731fe516085e/jackson-core-2.19.4.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.130.Final/bf0d74357fa74d50036a1d079c3f1a5d921c6195/netty-transport-native-unix-common-4.1.130.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.130.Final/a29adec03f7dbefdab3b21523a15c35e794f3154/netty-transport-native-unix-common-4.1.130.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.18.3",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.18.3/c35b2e4bf0e22e4d492936d46506bb2e6d8fafc8/byte-buddy-1.18.3.jar"
+                        },
+                        {
+                            "name": "byte-buddy",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.18.3/dc2392a351fdcd3c90299b6d8b721b26828e0f09/byte-buddy-1.18.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.protobuf",
+                    "name": "protobuf-java",
+                    "version": "4.29.3",
+                    "artifacts": [
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/4.29.3/de129622dc5511fe3229ebb2c67018c3bdbde27a/protobuf-java-4.29.3-sources.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/4.29.3/83afa847b893932b49a8fd896608fa23cd5fb0b5/protobuf-java-4.29.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.victools",
+                    "name": "jsonschema-module-jackson",
+                    "version": "4.38.0",
+                    "artifacts": [
+                        {
+                            "name": "jsonschema-module-jackson",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.github.victools/jsonschema-module-jackson/4.38.0/c924f0d657ddf66b624f584e76edc0bfc50d2988/jsonschema-module-jackson-4.38.0.jar"
+                        },
+                        {
+                            "name": "jsonschema-module-jackson",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.github.victools/jsonschema-module-jackson/4.38.0/72b911991c85a9ee29c9d94df9106cef693e312d/jsonschema-module-jackson-4.38.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.130.Final/ded9e46271cb087ece76f5c54b37d59c44ea722c/netty-handler-4.1.130.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.130.Final/e0593333f454ea57a02c6f4656401506e3deae14/netty-handler-4.1.130.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.opentelemetry",
+                    "name": "opentelemetry-context",
+                    "version": "1.58.0",
+                    "artifacts": [
+                        {
+                            "name": "opentelemetry-context",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-context/1.58.0/2df0b731c3c7c461816310891885777d424a1799/opentelemetry-context-1.58.0.jar"
+                        },
+                        {
+                            "name": "opentelemetry-context",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-context/1.58.0/623456be90aefa1d7c8e51fd2896f5018ce627f2/opentelemetry-context-1.58.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-simple",
+                    "version": "2.0.12",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-simple",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.12/5fb15030fb6158ef4f63ce4f889f72f4259a7bc3/slf4j-simple-2.0.12.jar"
+                        },
+                        {
+                            "name": "slf4j-simple",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.12/67cdce95492c5bdfd2f2f5f2914b3b2f3d36ba01/slf4j-simple-2.0.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jetbrains",
+                    "name": "annotations",
+                    "version": "13.0",
+                    "artifacts": [
+                        {
+                            "name": "annotations",
+                            "path": "/Users/michham/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "3.4",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.4/675cbe121a68019235d27f6c34b4f0ac30e07418/objenesis-3.4.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.4/5eac31db28388362cf0d241cf608b3c6a50b156/objenesis-3.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jetbrains.kotlin",
+                    "name": "kotlin-stdlib",
+                    "version": "2.2.10",
+                    "artifacts": [
+                        {
+                            "name": "kotlin-stdlib",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.10/30de6faa127a4a012db8e71bf1b9c0a99b1402b2/kotlin-stdlib-2.2.10.jar"
+                        },
+                        {
+                            "name": "kotlin-stdlib",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.10/dda98d7e091155886352a100dbca778315baa0f7/kotlin-stdlib-2.2.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.19.4",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.19.4/3cbcf2e636a6b062772299bf19a347536e58c4df/jackson-datatype-jsr310-2.19.4.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.19.4/225d239c073ab8ac4ed89188335f94a943645e11/jackson-datatype-jsr310-2.19.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver-dns",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver-dns",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.130.Final/866822addfba80b6f22267de3cc28efb6fe5ed4b/netty-resolver-dns-4.1.130.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-resolver-dns",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.130.Final/a08b6f50ce63a95a426e79f784158a0a670dbbf4/netty-resolver-dns-4.1.130.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-api",
+                    "version": "2.24.3",
+                    "artifacts": [
+                        {
+                            "name": "log4j-api",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.24.3/b02c125db8b6d295adf72ae6e71af5d83bce2370/log4j-api-2.24.3.jar"
+                        },
+                        {
+                            "name": "log4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.24.3/a9741c71e05aab4f5624a1cb3c1cec6d833b8701/log4j-api-2.24.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml",
+                    "name": "classmate",
+                    "version": "1.7.0",
+                    "artifacts": [
+                        {
+                            "name": "classmate",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.7.0/1fb2c63db3be98c5d75c9db1ab6dda855527c48c/classmate-1.7.0-sources.jar"
+                        },
+                        {
+                            "name": "classmate",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.7.0/e98374da1f2143ac8e6e0a95036994bb19137a3/classmate-1.7.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.12",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/michham/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.16",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/michham/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.opentelemetry",
+                    "name": "opentelemetry-api",
+                    "version": "1.58.0",
+                    "artifacts": [
+                        {
+                            "name": "opentelemetry-api",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-api/1.58.0/e7c61c9dca18b2f37653459824aecd50eb5ae9a9/opentelemetry-api-1.58.0-sources.jar"
+                        },
+                        {
+                            "name": "opentelemetry-api",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-api/1.58.0/6d2be0c909cfe6c9e0d9349d4b1f5d7edf4f57ee/opentelemetry-api-1.58.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler-proxy",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler-proxy",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.130.Final/9356fba7a979f4321dbfef39ccd137eef76316a2/netty-handler-proxy-4.1.130.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler-proxy",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.130.Final/48c8b5976c45f4c0caec63fa9d7e670c600b34b5/netty-handler-proxy-4.1.130.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.130.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.130.Final/5d7599356f2a550c5cf6e1f137825e8ae83c370d/netty-buffer-4.1.130.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "path": "/Users/michham/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.130.Final/ac7c21d8df92fe99f04dff2e28ff387b8195e6cf/netty-buffer-4.1.130.Final.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
